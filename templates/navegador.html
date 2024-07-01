@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laberinto Principal</title>
+  <link rel="stylesheet" href="static/css/css-principal.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div>
+        <div class="titulo">
+            Algoritmos de generación y solución de Laberinto!
+        </div>
+        <div class="navegador">
+            <ul>
+                <li>
+                    <a>Selecciona Algoritmo para generar Laberinto </a>
+                    <ul>
+                        <li>
+                            <a href="{{ url_for('generador_dfs') }}">Algoritmo DFS</a>
+                        </li>
+                        <li>
+                            <a href="{{ url_for('generador_kruskal') }}">Algoritmo Kruskal</a>
+                        </li>
+                        <li>
+                            <a href="{{ url_for('generador_prims') }}">Algoritmo Prim's</a>
+                        </li>
+                        <li>
+                            <a href="{{ url_for('generador_abbr') }}">Algoritmo Aldous-Broder</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laberinto Principal</title>
+  <link rel="stylesheet" href="static/css/css-principal.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    {% include 'navegador.html' %}     
+    <div class="caja">
+        <form method="POST" enctype="multipart/form-data" action="/crear_matriz" autocomplete="off">
+            <div class="form_matriz">
+                <div class="division"><label>Filas:</label></div>
+                <div class="division"><input name="filas" type="number"></div>
+                <div class="division"><label>Columnas:</label></div>
+                <div class="division"><input name="columnas" type="number"></div>                
+            </div>
+            <input type="submit" class="boton" value="Crear" style="display: flex;">
+        </form>
+    </div>
+    <script src="static/js/principal.js"></script>
+</body>
+</html>
